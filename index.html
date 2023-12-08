@@ -9,7 +9,36 @@
 </head>
 
 <body>
-    <h1>hello, world</h1>
+    <div class="container" id="image-container">
+        <div id="logo-text">Logo goes here</div>
+        <p>Image source</p>
+    </div>
+    <div class="container" id="form-container">
+        <h1>Form Name</h1>
+        <p>Here's some text trying to bait you into giving us your contact information!</p>
+        <form action="https://httpbin.org/post" method="post">
+            <fieldset id="form-input">
+                <legend>Let us dox you! Trust us!</legend>
+                <label for="first-name">First name:</label>
+                <input type="text" id="first-name" name="first-name">
+                <label for="last-name">Last name:</label>
+                <input type="text" id="last-name" name="last-name">
+                <label for="email-address">Email:</label>
+                <input type="email" id="email-address" name="email-address">
+                <label for="phone-number">Phone:</label>
+                <input type="tel" id="phone-number" name="phone-number">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password">
+                <label for="confirm-password">Confirm password:</label>
+                <input type="password" id="confirm-password" name="confirm-password">
+            </fieldset>
+            <fieldset id="submit-input">
+                <legend>Push the button! Push it!</legend>
+                <button type="submit">Submit</button>
+            </fieldset>
+        </form>
+        <p>Already sold your soul? <a href="">Log in</a></p>
+    </div>
 </body>
 
 </html>
