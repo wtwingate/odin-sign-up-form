@@ -3,5 +3,16 @@
 }
 
 body {
+    height: 100vh;
     display: flex;
+}
+
+.container {
+    width: 50%;
+}
+
+#image-container {
+    background-image: url("./images/aurora.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
