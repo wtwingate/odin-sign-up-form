@@ -1,0 +1,61 @@
+@import "./nord.css";
+
+@font-face {
+    font-family: "Norse";
+    src: url(../fonts/Norse-Bold.otf);
+}
+
+* {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    background-color: var(--nord6);
+    height: 100vh;
+    display: flex;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#image-container {
+    width: 50%;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url("../images/aurora.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#logo-container {
+    width: 100%;
+    padding: 2rem 0rem;
+    background-color: #000000a0
+}
+
+#image-credit {
+    color: var(--nord6);
+}
+
+#form-container {
+    width: 50%;
+    flex-direction: column;
+}
+
+#logo-text {
+    font-family: Norse;
+    font-size: 8rem;
+    color: var(--nord6)
+}
+
+img {
+    height: 8rem;
+    width: auto;
+}
