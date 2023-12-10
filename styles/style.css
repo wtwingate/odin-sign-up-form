@@ -1,3 +1,4 @@
+@import "./normalize.css";
 @import "./nord.css";
 
 @font-face {
@@ -14,9 +15,11 @@ html {
 }
 
 body {
+    color: var(--nord0);
     background-color: var(--nord6);
     height: 100vh;
     display: flex;
+    margin: 0px;
 }
 
 .container {
@@ -37,7 +40,7 @@ body {
 #logo-container {
     width: 100%;
     padding: 2rem 0rem;
-    background-color: #000000a0
+    background-color: #4c566a80;
 }
 
 #image-credit {
@@ -58,4 +61,8 @@ body {
 img {
     height: 8rem;
     width: auto;
+}
+
+a {
+    color: inherit;
 }
