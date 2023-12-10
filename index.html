@@ -26,11 +26,15 @@
         </p>
     </div>
     <div class="container" id="form-container">
-        <h1>Form Name</h1>
-        <p>Here's some text trying to bait you into giving us your contact information!</p>
+        <h1>Answer the questions!</h1>
+        <p id="appeal">
+            Here's some text trying to bait you into giving us your contact information.
+            We promise not to sell it to advertisers or do anything nefarious with it.
+            Trust us!
+        </p>
         <form action="https://httpbin.org/post" method="post">
-            <fieldset id="form-input">
-                <legend>Let us dox you! Trust us!</legend>
+            <div id="form-input">
+                <p>Let us dox you!</p>
                 <label for="first-name">First name:</label>
                 <input type="text" id="first-name" name="first-name">
                 <label for="last-name">Last name:</label>
@@ -43,13 +47,13 @@
                 <input type="password" id="password" name="password">
                 <label for="confirm-password">Confirm password:</label>
                 <input type="password" id="confirm-password" name="confirm-password">
-            </fieldset>
-            <fieldset id="submit-input">
-                <legend>Push the button! Push it!</legend>
+            </div>
+            <div id="submit-input">
+                <p>Push the button! Do it!</p>
                 <button type="submit">Submit</button>
-            </fieldset>
+            </div>
         </form>
-        <p>Already sold your soul? <a href="">Log in</a></p>
+        <p id="login">Already sold your soul? <a href="">Log in</a></p>
     </div>
 </body>
 

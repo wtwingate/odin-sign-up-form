@@ -11,12 +11,13 @@
 }
 
 html {
+    box-sizing: border-box;
     font-size: 16px;
 }
 
 body {
     color: var(--nord0);
-    background-color: var(--nord6);
+    background-color: var(--nord4);
     height: 100vh;
     display: flex;
     margin: 0px;
@@ -46,16 +47,6 @@ body {
     margin-bottom: auto;
 }
 
-#image-credit {
-    color: var(--nord6);
-}
-
-#form-container {
-    width: 50%;
-    flex-direction: column;
-    padding: 1rem;
-}
-
 #logo-text {
     font-family: Norse;
     font-size: 8rem;
@@ -69,4 +60,36 @@ img {
 
 a {
     color: inherit;
+}
+
+#image-credit {
+    font-size: 1rem;
+    color: var(--nord6);
+}
+
+#form-container {
+    width: 50%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding: 2rem;
+}
+
+#form-input {
+    background-color: var(--nord6);
+    margin: 0rem -2rem;
+    padding: 1rem 2rem;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+p {
+    font-size: 1.3rem;
+    margin: 0rem;
+}
+
+#login {
+    font-size: 1rem;
 }
