@@ -76,10 +76,21 @@ a {
   padding: 2rem;
 }
 
-#form-input {
+#form-block {
   background-color: var(--nord6);
-  margin: 0rem -2rem;
+  margin: 1rem -2rem;
   padding: 1rem 2rem;
+}
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 2rem;
+}
+
+li {
+  display: flex;
+  flex-direction: column;
 }
 
 h1 {
@@ -88,7 +99,6 @@ h1 {
 
 p {
   font-size: 1.3rem;
-  margin: 0rem;
 }
 
 #login {
