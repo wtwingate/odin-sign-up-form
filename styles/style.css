@@ -98,6 +98,17 @@ li {
   flex-direction: column;
 }
 
+label {
+  font-weight: 600;
+  font-variant-caps: all-petite-caps;
+  padding: 0.2rem 0rem;
+}
+
+input {
+  padding: 0.2rem;
+  width: 20ch;
+}
+
 h1 {
   font-size: 2rem;
 }
@@ -107,7 +118,7 @@ p {
 }
 
 #appeal {
-  padding-right: 8rem;
+  width: clamp(24ch 48ch 72ch);
 }
 
 button {
@@ -121,4 +132,9 @@ button {
 
 #login {
   font-size: 1rem;
+}
+
+input:focus {
+  outline-color: var(--nord10);
+  box-shadow: 1px 1px 4px var(--nord3);
 }
