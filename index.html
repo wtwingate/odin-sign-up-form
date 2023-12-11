@@ -10,12 +10,7 @@
   <body>
     <div class="container" id="image-container">
       <div class="container" id="logo-container">
-        <img
-          src="./images/odin-logo.png"
-          alt="Odin, the all-father"
-          width="380px"
-          height="508px"
-        />
+        <img src="./images/odin-logo.png" alt="Odin, the all-father" />
         <div id="logo-text">ODIN</div>
       </div>
       <p id="image-credit">
@@ -34,7 +29,7 @@
       </p>
     </div>
     <div class="container" id="form-container">
-      <h1>Answer the questions!</h1>
+      <h1>Sign up now!</h1>
       <p id="appeal">
         Here's some text trying to bait you into giving us your contact
         information. We promise not to sell it to advertisers or do anything
@@ -71,13 +66,14 @@
               />
             </li>
             <li>
-              <label for="password">Password</label>
+              <label for="input-password">Password</label>
               <input
                 type="password"
                 class="error"
-                id="password"
-                name="password"
-                pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)+{8}"
+                id="input-password"
+                name="input-password"
+                pattern="(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z]).{8,16}"
+                oninvalid="setCustomValidity('Password must be 8-16 characters long and include A-Z, a-z, and 0-9')"
                 required
               />
             </li>
@@ -88,7 +84,8 @@
                 class="error"
                 id="confirm-password"
                 name="confirm-password"
-                minlength="8"
+                pattern="(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z]).{8,16}"
+                oninvalid="setCustomValidity('Password must be 8-16 characters long and include A-Z, a-z, and 0-9')"
                 required
               />
             </li>
@@ -101,5 +98,11 @@
       </form>
       <p id="login">Already sold your soul? <a href="">Log in</a></p>
     </div>
+    <script>
+      const login = document.querySelector("#login");
+      login.addEventListener("click", () =>
+        alert("This isn't a real website, ya dingus!")
+      );
+    </script>
   </body>
 </html>

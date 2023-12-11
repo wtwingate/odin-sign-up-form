@@ -66,6 +66,7 @@ a {
 
 #image-credit {
   font-size: 1rem;
+  font-weight: 200;
   color: var(--nord6);
 }
 
@@ -126,15 +127,21 @@ button {
   background-color: var(--nord10);
   font-size: 1.2rem;
   padding: 0.5rem 4rem;
+  border-color: var(--nord10);
   border-radius: 8px;
   box-shadow: 2px 2px 4px var(--nord3);
 }
 
 #login {
   font-size: 1rem;
+  font-weight: 500;
 }
 
 input:focus {
   outline-color: var(--nord10);
   box-shadow: 1px 1px 4px var(--nord3);
+}
+
+.error:invalid {
+  outline-color: var(--nord11);
 }
