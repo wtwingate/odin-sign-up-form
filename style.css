@@ -1,0 +1,158 @@
+@font-face {
+  font-family: "Norse Bold";
+  src: url("fonts/Norse-Bold.otf");
+}
+
+/* Color theme */
+:root {
+  --antiflash-white: #edededff;
+  --charcoal: #354d5bff;
+  --charcoal-trans: #354d5b77;
+  --slate-gray: #738891ff;
+  --air-force-blue: #5c8fb1ff;
+  --air-force-blue-dark: #5083a5ff;
+  --cadet-gray: #9bb5c0ff;
+  --warning-red: #ff433f;
+}
+
+/* General styling */
+
+* {
+  /* NOTE: box-sizing is NOT inherited! */
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  line-height: 1.25rem;
+}
+
+body {
+  color: black;
+  background-color: var(--antiflash-white);
+  height: 100vh;
+  margin: 0px;
+  display: flex;
+  align-items: center;
+}
+
+p {
+  font-weight: 500;
+}
+
+/* Left side of the page */
+
+header {
+  height: 100%;
+  flex-basis: 40%;
+  display: flex;
+  flex-direction: column;
+  background-image: url("./images/glacial-mountains.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+header > p {
+  color: white;
+  text-align: center;
+  margin-top: auto;
+}
+
+header > p > a {
+  color: white;
+}
+
+.logo-container {
+  color: white;
+  background-color: var(--charcoal-trans);
+  margin-top: 25vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-family: "Norse Bold";
+  font-size: 6rem;
+}
+
+/* Right side of the page */
+
+main {
+  height: 100%;
+  flex-basis: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+
+main > p {
+  padding-left: 16px;
+  max-width: 60ch;
+}
+
+main > p > a {
+  color: var(--air-force-blue);
+
+  &:hover {
+    color: var(--air-force-blue-dark);
+  }
+}
+
+form {
+  background-color: white;
+  width: 100%;
+  box-shadow: 0px 0px 4px 1px var(--slate-gray);
+  margin: 32px 0px;
+  padding: 16px;
+}
+
+.item-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+  gap: 64px;
+  margin-bottom: 16px;
+}
+
+.item {
+}
+
+form > button {
+  color: white;
+  background-color: var(--air-force-blue);
+  margin-top: 16px;
+  font-size: 1.1rem;
+  padding: 0.5rem 2rem;
+  border: none;
+  border-radius: 8px;
+
+  &:hover {
+    background-color: var(--air-force-blue-dark);
+  }
+}
+
+label {
+  display: block;
+  color: var(--charcoal);
+  font-size: 0.75rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+input {
+  padding: 4px;
+  outline: none;
+  border-style: solid;
+
+  &:focus {
+    border-color: var(--air-force-blue-dark);
+    box-shadow: 0px 0px 2px 1px var(--cadet-gray);
+  }
+
+  &:user-invalid {
+    border-color: var(--warning-red);
+  }
+}
